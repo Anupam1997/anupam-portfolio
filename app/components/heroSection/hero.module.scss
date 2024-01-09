@@ -1,0 +1,26 @@
+.heroSection {
+  height: 100vh;
+  padding: 100px 10px;
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+  .heroImage {
+    flex: 1;
+    // border-radius: 50%;
+    // box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    //   rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  }
+  .heroText {
+    font-size: 56px;
+    font-weight: bolder;
+    background: linear-gradient(
+      270deg,
+      var(--gradient-1) 30%,
+      var(--gradient-2) 50%,
+      var(--gradient-1) 100%
+    );
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+  }
+}

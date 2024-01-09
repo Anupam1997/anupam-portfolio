@@ -1,0 +1,50 @@
+.header {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  padding: 20px 0px;
+  background-color: transparent;
+  color: var(--primary-color);
+  box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.25);
+
+  .logoText {
+    cursor: pointer;
+    transition: color 0.3s;
+    font-size: 18px;
+    font-weight: bold;
+    span {
+      color: var(--secondary-color);
+      transition: opacity 0.3s ease-in-out;
+    }
+    &:hover {
+      color: var(--color-primary);
+    }
+  }
+  .headerLinks {
+    display: flex;
+    column-gap: 50px;
+
+    .headerLink {
+      cursor: pointer;
+      color: var(--primary-color);
+      transition: color 0.3s;
+      span {
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out;
+      }
+      &:hover {
+        font-weight: 500;
+        color: var(--secondary-color);
+        span {
+          opacity: 1;
+        }
+      }
+    }
+  }
+  .socialIcons {
+    cursor: pointer;
+    &:hover {
+      color: var(--secondary-color);
+    }
+  }
+}
