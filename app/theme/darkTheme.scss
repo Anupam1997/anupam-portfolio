@@ -1,6 +1,8 @@
 [data-theme="dark"] {
   --primary-color: #fff;
-  --secondary-color: #82e0aa;
+  --secondary-color: #efefef;
+  --tertiary-color: #cbcbcb;
+  --link-color: #82e0aa;
   --font-color: #e1e1ff;
   --bg-color: #161625;
   --bg-color2: #0f1624;
@@ -8,4 +10,5 @@
 
   --gradient-1: #82e0aa;
   --gradient-2: #00ff23;
+  --box-shadow: rgba(130, 224, 170, 0.2) 0px 4px 9px 0px;
 }

@@ -11,16 +11,72 @@
     //   rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
   }
   .heroText {
-    font-size: 56px;
+    font-size: 3.5rem;
     font-weight: bolder;
+    .heroMainText {
+      background: linear-gradient(
+        270deg,
+        var(--gradient-1) 30%,
+        var(--gradient-2) 50%,
+        var(--gradient-1) 100%
+      );
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      -webkit-background-clip: text;
+    }
+    .heroSubText {
+      color: var(--secondary-color);
+    }
+  }
+  .heroDesc {
+    font-size: 1rem;
+    color: var(--tertiary-color);
+  }
+
+  .donwloadBtn {
+    font-family: "Source Code Pro", monospace;
+    font-weight: 500;
+    border-radius: 30px;
+    padding: 6px 36px;
+    color: var(--bg-color2);
+    border-color: transparent;
     background: linear-gradient(
       270deg,
       var(--gradient-1) 30%,
       var(--gradient-2) 50%,
       var(--gradient-1) 100%
     );
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
+  }
+
+  .resumePreviewBtn {
+    border-radius: 30px;
+    padding: 2px;
+    border-color: transparent;
+    background: linear-gradient(
+      270deg,
+      var(--gradient-1) 30%,
+      var(--gradient-2) 50%,
+      var(--gradient-1) 100%
+    );
+    .resumePreviewInner {
+      background-color: var(--bg-color2);
+      border-radius: 30px;
+    }
+    .innerBtn {
+      background: linear-gradient(
+        270deg,
+        var(--gradient-1) 30%,
+        var(--gradient-2) 50%,
+        var(--gradient-1) 100%
+      );
+      font-family: "Source Code Pro", monospace;
+      font-weight: 500;
+      border-radius: 30px;
+      padding: 4px 34px;
+      color: var(--primary-color);
+      border-color: transparent;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
   }
 }

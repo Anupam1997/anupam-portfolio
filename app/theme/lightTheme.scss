@@ -1,6 +1,8 @@
 [data-theme="light"] {
   --primary-color: #000;
-  --secondary-color: #00ccff;
+  --secondary-color: #3b3b3b;
+  --tertiary-color: #535353;
+  --link-color: #00ccff;
   --font-color: #e1e1ff;
   --bg-color: #161625;
   --bg-color2: #fff;
@@ -8,6 +10,7 @@
 
   --gradient-1: #003153;
   --gradient-2: #00ccff;
+  --box-shadow: rgba(0, 204, 255, 0.2) 0px 4px 9px 0px;
 
   // --gradient-1: #ff0066;
   // --gradient-2: #ff073a;
