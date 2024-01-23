@@ -33,6 +33,21 @@
     color: var(--tertiary-color);
   }
 
+  .downloadBtn {
+    font-family: "Source Code Pro", monospace;
+    font-weight: 500;
+    border-radius: 30px;
+    padding: 6px 36px;
+    color: var(--bg-color2);
+    border-color: transparent;
+    background: linear-gradient(
+      270deg,
+      var(--gradient-1) 30%,
+      var(--gradient-2) 50%,
+      var(--gradient-1) 100%
+    );
+  }
+
   .resumePreviewBtn {
     border-radius: 30px;
     padding: 2px;

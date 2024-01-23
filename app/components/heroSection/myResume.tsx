@@ -2,8 +2,8 @@
 import React, { useState, useEffect } from "react";
 import { Button } from "@mui/material";
 import { FileDownloadOutlined, VisibilityOutlined } from "@mui/icons-material";
-import styles from "./hero.module.scss";
 import { PreviewResume } from "./previewResume";
+import styles from "./hero.module.scss";
 
 function MyResumeSection() {
   const [mounted, setMounted] = useState(false);
