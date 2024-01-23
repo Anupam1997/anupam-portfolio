@@ -53,7 +53,7 @@ export const PreviewResume = ({
               This browser does not support PDFs
             </p>
             <Button
-              className={styles.downloadBtn}
+              className={styles.downloadBtnIn}
               size="large"
               variant="contained"
               startIcon={<FileDownloadOutlined />}
