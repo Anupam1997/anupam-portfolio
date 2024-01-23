@@ -4,12 +4,9 @@ import React from "react";
 import styles from "./header.module.scss";
 import ThemeButton from "../ThemeButton/ThemeButton";
 import Link from "next/link";
-import { useRouter } from "next/navigation";
 import { GitHub, Instagram, LinkedIn } from "@mui/icons-material";
 
 function Header() {
-  const router = useRouter();
-
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
