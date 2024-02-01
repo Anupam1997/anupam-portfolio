@@ -11,11 +11,13 @@ import {
   Navigation,
 } from "swiper/modules";
 import styles from "./projects.module.scss";
-import Image from "next/image";
-import NextLink from "next/link";
 import { Button } from "@mui/material";
 import projects from "../../json/data.json";
 import { Code, Preview } from "@mui/icons-material";
+import Screen from "./screen";
+import ImageS from "./image.svg";
+import Image from "next/image";
+
 export const ProjectSlide = () => {
   const [mounted, setMounted] = useState(false);
 
@@ -33,7 +35,7 @@ export const ProjectSlide = () => {
       slidesPerView={"auto"}
       loop
       coverflowEffect={{
-        rotate: 50,
+        rotate: 40,
         stretch: 0,
         depth: 100,
         modifier: 1,
@@ -59,6 +61,10 @@ export const ProjectSlide = () => {
               <div className={styles.projectInfo}>
                 <h4 className={styles.projectTitle}>{project.title}</h4>
                 <p className={styles.projectDesc}>{project.description}</p>
+                <p className={styles.tech}>
+                  Tech:
+                  <span> {project.tech.join(", ")}</span>
+                </p>
                 <div className="flex gap-4 mt-4">
                   <a target="blank" href={project.gitLink}>
                     <Button
@@ -98,13 +104,7 @@ export const ProjectSlide = () => {
                 </div>
               </div>
               <div className={styles.projectImg}>
-                <Image
-                  src="https://picsum.photos/536/354"
-                  alt="sdsds"
-                  width={500}
-                  height={500}
-                  style={{ borderRadius: "50%" }}
-                />
+                <Image src={ImageS} alt="some" />
               </div>
             </div>
           </SwiperSlide>

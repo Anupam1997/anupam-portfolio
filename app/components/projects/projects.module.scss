@@ -69,6 +69,16 @@
         height: 100%;
         width: auto;
       }
+
+      .tech {
+        margin-top: 16px;
+        color: var(--primary-color) !important;
+        font-size: 12px;
+        font-weight: 500;
+        span {
+          font-weight: 400;
+        }
+      }
     }
 
     .gitBtn {
@@ -114,6 +124,7 @@
         padding: 3px 18px;
         color: var(--primary-color);
         border-color: transparent;
+        background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
       }

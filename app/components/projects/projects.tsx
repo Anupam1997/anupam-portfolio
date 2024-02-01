@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./projects.module.scss";
 import { ProjectSlide } from "./project-slide";
+import Screen from "./screen";
 
 export const Projects = () => {
   return (

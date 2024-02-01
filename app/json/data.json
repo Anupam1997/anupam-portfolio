@@ -1,30 +1,34 @@
 [
   {
     "title": "Anupam Singh Portfolio",
-    "description": "lorem ipsum",
+    "description": "Experienced MERN Stack Developer with proven expertise in building highly performant and user-friendly web applications.",
     "gitLink": "https://github.com/Anupam1997/anupam-portfolio",
     "previewLink": "https://anupam-dev.vercel.app/",
-    "image": ""
+    "image": "",
+    "tech": ["NextJs", "tailwind", "vercel", "Mui"]
   },
   {
     "title": "Rick & Morty App",
-    "description": "lorem ipsum",
+    "description": "Discover Rick and Morty with our easy-to-use web app! Search, filter, and explore characters, episodes, and locations – all in one place. Dive into the world of laughs with a simple click!",
     "gitLink": "https://github.com/Anupam1997/refrens-webapp",
     "previewLink": "https://refrens-webapp.vercel.app/",
-    "image": ""
+    "image": "",
+    "tech":["React", "Html", "css", "scss", "vercel"]
   },
   {
     "title": "Star Bakery App",
-    "description": "lorem ipsum",
+    "description": "Order your favorite treats with ease on our bakery web app. Explore our menu, place orders, and for bakery owners, manage it all effortlessly on the admin dashboard.",
     "gitLink": "https://github.com/Anupam1997/online-bakery",
     "previewLink": "https://online-bakery-vert.vercel.app/",
-    "image": ""
+    "image": "",
+    "tech":["React", "Html", "css", "scss", "bootstrap", "Node", "Express", "MongoDB", "vercel"]
   },
   {
     "title": "Online Clothing Store",
-    "description": "lorem ipsum",
+    "description": "Elevate your style at our online clothing store. Trendy collections, perfect fits, and a seamless shopping experience await you. Shop now, feel fabulous!",
     "gitLink": "https://github.com/Anupam1997/E-COMMERCE",
     "previewLink": "",
-    "image": ""
+    "image": "",
+    "tech":["Html", "css", "php", "bootstrap", "mysql", "jQuery", "AJAX"]
   }
 ]
