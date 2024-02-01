@@ -84,9 +84,9 @@
 .downloadBtnIn {
   color: var(--bg-color2) !important;
   border-color: transparent !important;
-  position: absolute;
-  right: 20px;
-  top: 20px;
+  position: absolute !important;
+  right: 20px !important;
+  top: 20px !important;
   z-index: 2;
   background: linear-gradient(
     270deg,
