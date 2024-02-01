@@ -82,12 +82,12 @@
   }
 }
 .downloadBtnIn {
-  font-family: "Source Code Pro", monospace !important;
-  font-weight: 500 !important;
-  border-radius: 30px !important;
-  padding: 6px 36px;
   color: var(--bg-color2) !important;
   border-color: transparent !important;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  z-index: 2;
   background: linear-gradient(
     270deg,
     var(--gradient-1) 30%,

@@ -1,7 +1,26 @@
-import React, { Dispatch, SetStateAction } from "react";
+"use client";
+import React, { Dispatch, SetStateAction, useCallback, useState } from "react";
 import { Close, FileDownloadOutlined } from "@mui/icons-material";
 import { Button, IconButton, SwipeableDrawer } from "@mui/material";
+import { Document, Page, pdfjs } from "react-pdf";
+import useResizeObserver from "@/app/hooks/useResizeObserver";
 import styles from "./hero.module.scss";
+import "react-pdf/dist/esm/Page/AnnotationLayer.css";
+import "react-pdf/dist/esm/Page/TextLayer.css";
+import "./preview.scss";
+
+const resizeObserverOptions = {};
+
+const maxWidth = 800;
+const options = {
+  cMapUrl: "/cmaps/",
+  standardFontDataUrl: "/standard_fonts/",
+};
+
+pdfjs.GlobalWorkerOptions.workerSrc = new URL(
+  "pdfjs-dist/build/pdf.worker.min.js",
+  import.meta.url
+).toString();
 
 export const PreviewResume = ({
   open,
@@ -10,6 +29,18 @@ export const PreviewResume = ({
   open: boolean;
   setOpen: Dispatch<SetStateAction<boolean>>;
 }) => {
+  const [containerRef, setContainerRef] = useState<HTMLElement | null>(null);
+  const [containerWidth, setContainerWidth] = useState<number>();
+
+  const onResize = useCallback<ResizeObserverCallback>((entries) => {
+    const [entry] = entries;
+
+    if (entry) {
+      setContainerWidth(entry.contentRect.width);
+    }
+  }, []);
+
+  useResizeObserver(containerRef, resizeObserverOptions, onResize);
   return (
     <>
       <SwipeableDrawer
@@ -41,29 +72,35 @@ export const PreviewResume = ({
         >
           <Close fontSize="small" />
         </IconButton>
-
-        <object
-          data="./AnupamSinghResume.pdf"
-          type="application/pdf"
-          width="100%"
-          height={"100%"}
-        >
-          <div className="flex flex-col gap-8 h-full flex-column justify-center items-center">
-            <p className={styles.fallBackText}>
-              This browser does not support PDFs
-            </p>
-            <Button
-              className={styles.downloadBtnIn}
-              size="large"
-              variant="contained"
-              startIcon={<FileDownloadOutlined />}
-              href="./AnupamSinghResume.pdf"
-              download={"AnupamSinghResume"}
-            >
-              Download Resume
-            </Button>
+        <div className="pdfWrapper">
+          <IconButton
+            className={styles.downloadBtnIn}
+            size="large"
+            href="./AnupamSinghResume.pdf"
+            download={"AnupamSinghResume"}
+          >
+            <FileDownloadOutlined />
+          </IconButton>
+          <div className="Example">
+            <div className="Example__container">
+              <div
+                className="Example__container__document"
+                ref={setContainerRef}
+              >
+                <Document file={"./AnupamSinghResume.pdf"} options={options}>
+                  <Page
+                    pageNumber={1}
+                    width={
+                      containerWidth
+                        ? Math.min(containerWidth, maxWidth)
+                        : maxWidth
+                    }
+                  />
+                </Document>
+              </div>
+            </div>
           </div>
-        </object>
+        </div>
       </SwipeableDrawer>
     </>
   );
