@@ -14,9 +14,7 @@ import styles from "./projects.module.scss";
 import { Button } from "@mui/material";
 import projects from "../../json/data.json";
 import { Code, Preview } from "@mui/icons-material";
-import Screen from "./screen";
-import ImageS from "./image.svg";
-import Image from "next/image";
+import LaptopScreen from "./laptop";
 
 export const ProjectSlide = () => {
   const [mounted, setMounted] = useState(false);
@@ -104,7 +102,7 @@ export const ProjectSlide = () => {
                 </div>
               </div>
               <div className={styles.projectImg}>
-                <Image src={ImageS} alt="some" />
+                <LaptopScreen image={project.previewImage} />
               </div>
             </div>
           </SwiperSlide>

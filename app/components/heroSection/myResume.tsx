@@ -1,7 +1,7 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import { Button } from "@mui/material";
-import { FileDownloadOutlined, VisibilityOutlined } from "@mui/icons-material";
+import { DescriptionOutlined, VisibilityOutlined } from "@mui/icons-material";
 import { PreviewResume } from "./previewResume";
 import styles from "./hero.module.scss";
 
@@ -23,11 +23,18 @@ function MyResumeSection() {
           className={styles.downloadBtn}
           size="large"
           variant="contained"
-          startIcon={<FileDownloadOutlined />}
-          href="./AnupamSinghResume.pdf"
-          download={"AnupamSinghResume"}
+          onClick={() => setOpen(true)}
+          endIcon={
+            <span
+              role="img"
+              style={{ fontSize: "24px", margin: "-9px 0px" }}
+              aria-label="Waving Hand"
+            >
+              👋
+            </span>
+          }
         >
-          Resume
+          Say Hi!
         </Button>
         <div className={styles.resumePreviewBtn}>
           <div className={styles.resumePreviewInner}>
@@ -36,7 +43,7 @@ function MyResumeSection() {
               size="large"
               variant="outlined"
               startIcon={
-                <VisibilityOutlined
+                <DescriptionOutlined
                   style={{
                     fill: "var(--gradient-1)",
                   }}

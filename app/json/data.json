@@ -4,7 +4,7 @@
     "description": "Experienced MERN Stack Developer with proven expertise in building highly performant and user-friendly web applications.",
     "gitLink": "https://github.com/Anupam1997/anupam-portfolio",
     "previewLink": "https://anupam-dev.vercel.app/",
-    "image": "",
+    "previewImage": "",
     "tech": ["NextJs", "tailwind", "vercel", "Mui"]
   },
   {
@@ -12,7 +12,7 @@
     "description": "Discover Rick and Morty with our easy-to-use web app! Search, filter, and explore characters, episodes, and locations – all in one place. Dive into the world of laughs with a simple click!",
     "gitLink": "https://github.com/Anupam1997/refrens-webapp",
     "previewLink": "https://refrens-webapp.vercel.app/",
-    "image": "",
+    "previewImage": "/images/RickAndMortyPreview.png",
     "tech":["React", "Html", "css", "scss", "vercel"]
   },
   {
@@ -20,7 +20,7 @@
     "description": "Order your favorite treats with ease on our bakery web app. Explore our menu, place orders, and for bakery owners, manage it all effortlessly on the admin dashboard.",
     "gitLink": "https://github.com/Anupam1997/online-bakery",
     "previewLink": "https://online-bakery-vert.vercel.app/",
-    "image": "",
+    "previewImage": "/images/OnlineBakeryPreview.png",
     "tech":["React", "Html", "css", "scss", "bootstrap", "Node", "Express", "MongoDB", "vercel"]
   },
   {
@@ -28,7 +28,7 @@
     "description": "Elevate your style at our online clothing store. Trendy collections, perfect fits, and a seamless shopping experience await you. Shop now, feel fabulous!",
     "gitLink": "https://github.com/Anupam1997/E-COMMERCE",
     "previewLink": "",
-    "image": "",
+    "previewImage": "/images/OnlineClothingStore.png",
     "tech":["Html", "css", "php", "bootstrap", "mysql", "jQuery", "AJAX"]
   }
 ]
