@@ -1,0 +1,87 @@
+[
+  {
+    "name": "html",
+    "logo": "/logos/html5.svg",
+    "rating": "8"
+  },
+  {
+    "name": "css",
+    "logo": "/logos/css.svg",
+    "rating": "8"
+  },
+  {
+    "name": "javascript",
+    "logo": "/logos/javaScript.png",
+    "rating": "7"
+  },
+  {
+    "name": "react",
+    "logo": "/logos/reactjs.svg",
+    "rating": "8"
+  },
+  {
+    "name": "typescript",
+    "logo": "/logos/Typescript.svg",
+    "rating": "7.5"
+  },
+  {
+    "name": "redux",
+    "logo": "/logos/redux.png",
+    "rating": "7"
+  },
+  {
+    "name": "css",
+    "logo": "/logos/Sass.svg",
+    "rating": "8"
+  },
+  {
+    "name": "Next Js",
+    "logo": "/logos/next.svg",
+    "rating": "6"
+  },
+  {
+    "name": "Bootstrap",
+    "logo": "/logos/bootstrap.svg",
+    "rating": "8"
+  },
+  {
+    "name": "tailwind",
+    "logo": "/logos/Tailwind.svg",
+    "rating": "6"
+  },
+  {
+    "name": "Git",
+    "logo": "/logos/Gitlogo.svg",
+    "rating": "6"
+  },
+  {
+    "name": "Node Js",
+    "logo": "/logos/nodejs.svg",
+    "rating": "5"
+  },
+  {
+    "name": "express js",
+    "logo": "/logos/expressjs.png",
+    "rating": "5"
+  },
+  {
+    "name": "mongodb",
+    "logo": "/logos/mongodb.svg",
+    "rating": "4"
+  },
+  {
+    "name": "MySQL",
+    "logo": "/logos/MySQL.svg",
+    "rating": "4"
+  },
+  {
+    "name": "Ruby",
+    "logo": "/logos/ruby.svg",
+    "rating": "4"
+  },
+  {
+    "name": "Ruby on rails",
+    "logo": "/logos/rails.svg",
+    "rating": "4"
+  }
+]

@@ -1,0 +1,39 @@
+.skills {
+  height: 100vh;
+  padding: 100px 10px;
+
+  .heading {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    transition: color 0.3s;
+    font-weight: bold;
+    text-align: center;
+
+    span {
+      color: var(--link-color);
+      transition: opacity 0.3s ease-in-out;
+    }
+  }
+
+  .outer {
+    border-color: transparent;
+    background: linear-gradient(
+      270deg,
+      var(--gradient-1) 30%,
+      var(--gradient-2) 50%,
+      var(--gradient-1) 100%
+    );
+  }
+
+  .inner {
+    background-color: rgba($color: #fff, $alpha: 0.9);
+  }
+
+  .skillLabel {
+    color: var(--secondary-color);
+    font-weight: 400;
+    font-family: "Source Code Pro", monospace;
+    font-size: 12px;
+  }
+}

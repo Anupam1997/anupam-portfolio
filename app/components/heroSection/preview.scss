@@ -4,7 +4,7 @@
 }
 .Example header {
   background-color: #323639;
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 8px var(--navbar-shadow);
   padding: 20px;
   color: white;
 }
@@ -41,7 +41,7 @@
 
 .Example__container__document .react-pdf__Page {
   margin: 1em 0;
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 8px var(--navbar-shadow);
 }
 
 .Example__container__document .react-pdf__message {

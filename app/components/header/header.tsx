@@ -16,8 +16,11 @@ function Header() {
 
   return (
     <div className={styles.header}>
-      <div className=" flex align-middle justify-between max-w-5xl mx-auto">
-        <div className={styles.logoText}>
+      <div className="flex align-middle justify-between max-w-5xl mx-auto">
+        <div
+          className={styles.logoText}
+          onClick={() => scrollToSection("heroSection")}
+        >
           <span>&lt;</span>Anupam Singh<span> /&gt;</span>
         </div>
         <div className={styles.headerLinks}>
@@ -29,9 +32,9 @@ function Header() {
           </p>
           <p
             className={styles.headerLink}
-            onClick={() => scrollToSection("contact")}
+            onClick={() => scrollToSection("skills")}
           >
-            <span>&lt;</span>Technologies<span> /&gt;</span>
+            <span>&lt;</span>Skills<span> /&gt;</span>
           </p>
           <p
             className={styles.headerLink}

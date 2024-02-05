@@ -5,7 +5,7 @@ import MyResumeSection from "./myResume";
 
 function HeroSection() {
   return (
-    <div className={`${styles.heroSection} max-w-5xl mx-auto`}>
+    <div id="heroSection" className={`${styles.heroSection} max-w-5xl mx-auto`}>
       <div>
         <h1 className={styles.heroText}>
           <p className={styles.heroMainText}>Hi, I&apos;m Anupam,</p>

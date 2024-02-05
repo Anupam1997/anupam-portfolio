@@ -16,6 +16,14 @@ function MyResumeSection() {
   if (!mounted) {
     return null;
   }
+
+  const scrollToSection = (sectionId: string) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <>
       <div className="flex gap-6 mt-6 ml-8">
@@ -23,7 +31,7 @@ function MyResumeSection() {
           className={styles.downloadBtn}
           size="large"
           variant="contained"
-          onClick={() => setOpen(true)}
+          onClick={() => scrollToSection("contact")}
           endIcon={
             <span
               role="img"
