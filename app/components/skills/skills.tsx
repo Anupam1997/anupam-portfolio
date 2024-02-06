@@ -10,7 +10,7 @@ import LinearProgress, {
 import { Switch } from "@mui/material";
 
 const BorderLinearProgress = styled(LinearProgress)(({ theme }) => ({
-  height: 8,
+  height: 6,
   borderRadius: 30,
   [`&.${linearProgressClasses.colorPrimary}`]: {
     background: "var(--muted-color)",
@@ -48,14 +48,14 @@ export const Skills = () => {
               <div
                 key={i}
                 className={
-                  `w-28 h-28  rounded-full flex items-center justify-center` +
+                  `lg:w-28 lg:h-28  md:w-24 md:h-24 sm:w-20 sm:h-20 rounded-full flex items-center justify-center` +
                   " " +
                   styles.outer
                 }
               >
                 <div
                   className={
-                    `w-28 h-28 rounded-full flex items-center justify-center` +
+                    `lg:w-28 lg:h-28 md:w-24 md:h-24 sm:w-20 sm:h-20 rounded-full flex items-center justify-center` +
                     " " +
                     styles.inner
                   }
@@ -67,7 +67,7 @@ export const Skills = () => {
           })}
         </div>
       ) : (
-        <div className="grid  items-center grid-cols-3 justify-center gap-8 ali">
+        <div className="grid  items-center lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-2 justify-center gap-8 ali">
           {skills.map((x, i) => {
             setTimeout(() => {
               setRemount("determinate");

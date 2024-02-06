@@ -1,0 +1,36 @@
+/* styles.css */
+
+.contact-textfield {
+  & .MuiInputLabel-root {
+    color: var(--tertiary-color); /* Text color */
+  }
+  & .MuiInputBase-root {
+    color: var(--primary-color); /* Text color */
+  }
+
+  & .MuiInput-underline:before {
+    border-bottom-color: var(--gradient-1); /* Bottom line color */
+  }
+
+  & .MuiInputLabel-root.Mui-focused {
+    color: var(--tertiary-color); /* Focused label color */
+  }
+
+  & .MuiInput-underline.Mui-focused:before {
+    border-bottom-color: var(--primary-color); /* Focused bottom line color */
+  }
+
+  & .MuiInput-underline.Mui-focused:after {
+    border-bottom-color: var(--gradient-2); /* Focused bottom line color */
+  }
+
+  &:hover .MuiInput-underline:before {
+    border-bottom-color: var(--primary-color); /* Hovered bottom line color */
+  }
+
+  &:hover .MuiInput-underline:hover:before {
+    border-bottom-color: var(
+      --primary-color
+    ); /* Additional styling for hover state */
+  }
+}
