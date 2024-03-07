@@ -1,7 +1,7 @@
 "use client";
 import React, { Dispatch, SetStateAction, useCallback, useState } from "react";
 import { Close, FileDownloadOutlined } from "@mui/icons-material";
-import { Button, IconButton, SwipeableDrawer } from "@mui/material";
+import { IconButton, SwipeableDrawer } from "@mui/material";
 import { Document, Page, pdfjs } from "react-pdf";
 import useResizeObserver from "@/app/hooks/useResizeObserver";
 import styles from "./hero.module.scss";
@@ -72,7 +72,7 @@ export const PreviewResume = ({
         >
           <Close fontSize="small" />
         </IconButton>
-        <div className="pdfWrapper">
+        <section className="pdfWrapper">
           <IconButton
             className={styles.downloadBtnIn}
             size="large"
@@ -100,7 +100,7 @@ export const PreviewResume = ({
               </div>
             </div>
           </div>
-        </div>
+        </section>
       </SwipeableDrawer>
     </>
   );

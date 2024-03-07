@@ -15,33 +15,33 @@ function Header() {
   };
 
   return (
-    <div className={styles.header}>
-      <div className="flex align-middle justify-between max-w-5xl mx-auto">
-        <div
+    <header className={styles.header}>
+      <div className="flex align-middle justify-between 2xl:max-w-7xl xl:max-w-5xl lg:max-w-5xl md:max-w-5xl sm:max-w-5xl mx-auto">
+        <nav
           className={styles.logoText}
           onClick={() => scrollToSection("heroSection")}
         >
           <span>&lt;</span>Anupam Singh<span> /&gt;</span>
-        </div>
+        </nav>
         <div className={styles.headerLinks}>
-          <p
+          <nav
             className={styles.headerLink}
             onClick={() => scrollToSection("projects")}
           >
             <span>&lt;</span>Projects<span> /&gt;</span>
-          </p>
-          <p
+          </nav>
+          <nav
             className={styles.headerLink}
             onClick={() => scrollToSection("skills")}
           >
             <span>&lt;</span>Skills<span> /&gt;</span>
-          </p>
-          <p
+          </nav>
+          <nav
             className={styles.headerLink}
             onClick={() => scrollToSection("aboutme")}
           >
             <span>&lt;</span>About me<span> /&gt;</span>
-          </p>
+          </nav>
         </div>
         <div>
           <Link
@@ -65,7 +65,7 @@ function Header() {
         </div>
         <ThemeButton />
       </div>
-    </div>
+    </header>
   );
 }
 

@@ -5,7 +5,7 @@ import MyResumeSection from "./myResume";
 
 function HeroSection() {
   return (
-    <div
+    <section
       id="heroSection"
       className={`${styles.heroSection} flex lg:flex-row flex-col max-w-5xl mx-auto`}
     >
@@ -21,7 +21,7 @@ function HeroSection() {
         <MyResumeSection />
       </div>
       <HeroImage />
-    </div>
+    </section>
   );
 }
 

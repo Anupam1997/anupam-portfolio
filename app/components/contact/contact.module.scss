@@ -22,5 +22,13 @@
     .subContainer {
       padding: 16px;
     }
+    .socialIcons {
+      cursor: pointer;
+      color: var(--gradient-1);
+
+      &:hover {
+        color: var(--gradient-2);
+      }
+    }
   }
 }

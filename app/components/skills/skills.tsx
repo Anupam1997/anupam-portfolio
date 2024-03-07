@@ -28,7 +28,10 @@ export const Skills = () => {
   >("buffer");
 
   return (
-    <div id="skills" className={`${styles.skills} max-w-5xl mx-auto`}>
+    <section
+      id="skills"
+      className={`${styles.skills} 2xl:max-w-7xl xl:max-w-5xl lg:max-w-5xl md:max-w-5xl sm:max-w-5xl mx-auto`}
+    >
       <h1 className={styles.heading}>
         <span>&lt;</span>Skills<span> /&gt;</span>
       </h1>
@@ -84,6 +87,6 @@ export const Skills = () => {
           })}
         </div>
       )}
-    </div>
+    </section>
   );
 };

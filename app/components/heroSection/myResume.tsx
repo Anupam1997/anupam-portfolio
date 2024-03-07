@@ -26,7 +26,7 @@ function MyResumeSection() {
 
   return (
     <>
-      <div className="flex gap-6 mt-6 ml-8">
+      <section className="flex gap-6 mt-6 ml-8">
         <Button
           className={styles.downloadBtn}
           size="large"
@@ -63,7 +63,7 @@ function MyResumeSection() {
             </Button>
           </div>
         </div>
-      </div>
+      </section>
       <PreviewResume open={open} setOpen={setOpen} />
     </>
   );
